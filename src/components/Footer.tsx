@@ -12,6 +12,8 @@ const socials = [
   { label: "Facebook", href: "https://facebook.com/lumin8digitalagency" },
 ];
 
+import lumin8Logo from "@/assets/lumin8-logo.png";
+
 const Footer = () => {
   return (
     <footer className="bg-background border-t border-foreground/[0.06] py-16 px-6">

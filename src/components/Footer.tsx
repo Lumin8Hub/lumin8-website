@@ -20,7 +20,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
         {/* Col 1 */}
         <div>
-          <span className="font-heading font-bold text-lg tracking-[0.15em] text-foreground">LUMIN8</span>
+          <img src={lumin8Logo} alt="LUMIN8" className="h-10 w-auto" />
           <p className="text-lumin8-gray-400 text-sm mt-3 font-serif italic">
             There's light at the end of the funnel.
           </p>

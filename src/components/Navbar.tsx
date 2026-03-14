@@ -35,9 +35,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <span className="font-heading font-bold text-lg tracking-[0.15em] text-foreground">
-        LUMIN8
-      </span>
+      <img src={lumin8Logo} alt="LUMIN8" className="h-7 w-auto" />
 
       {/* Desktop links */}
       <div className="hidden md:flex items-center gap-8">

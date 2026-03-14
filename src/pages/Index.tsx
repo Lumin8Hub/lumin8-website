@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -15,6 +16,8 @@ import AboutSection from "@/components/AboutSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Index = () => {
   useEffect(() => {

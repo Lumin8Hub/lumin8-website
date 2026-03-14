@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/lumin8-logo.png";
+import lumin8Logo from "@/assets/lumin8-logo.png";
 
 const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER — replace with actual form URL before launch
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         background: scrolled ? "rgba(13, 17, 23, 0.8)" : "transparent",
       }}
     >
-      <img src={logo} alt="Lumin8" className="h-8 w-auto" />
+      <img src={lumin8Logo} alt="LUMIN8" className="h-7 w-auto" />
 
       {/* Desktop links */}
       <div className="hidden md:flex items-center gap-8">

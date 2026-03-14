@@ -14,7 +14,7 @@ const PricingSection = () => {
       <div className="blob blob-lavender w-32 h-32 bottom-20 -left-10 opacity-30 blur-[50px]" />
 
       <div className="max-w-6xl mx-auto">
-        <span className="section-label">// PACKAGES & PRICING</span>
+        
         <h2 className="section-headline text-foreground mb-2">
           Everything you need to launch.
         </h2>

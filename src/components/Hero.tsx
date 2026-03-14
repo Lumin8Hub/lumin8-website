@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="blob blob-yellow w-28 h-28 top-[20%] right-[35%] opacity-40 blur-[40px]" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 pb-20 md:pb-28 pt-32 w-full">
-        <span className="hero-label section-label">// LUMIN8 STARTER TIER</span>
+        
 
         <h1
           className="hero-headline font-heading font-extrabold tracking-[-0.03em] leading-[1.05] text-foreground mb-4"

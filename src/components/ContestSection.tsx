@@ -23,7 +23,7 @@ const ContestSection = () => {
   return (
     <section ref={sectionRef as React.RefObject<HTMLElement>} id="contest" className="bg-primary py-24 px-6">
       <div className="max-w-4xl mx-auto text-center">
-        <span className="section-label text-primary-foreground/60">// FREE WEBSITE CONTEST</span>
+        
         <h2 className="section-headline text-primary-foreground mb-2">
           Win a custom Starter Website.
         </h2>

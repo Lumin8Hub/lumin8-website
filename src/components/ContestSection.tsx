@@ -1,13 +1,15 @@
 import { Check } from "lucide-react";
-import { useScrollAnimation } from "@/hooks/useScrollAnimation";
+import SectionReveal from "./animations/SectionReveal";
 
 const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER
 
 const prizeItems = [
-  "Custom React-based Landing Page",
-  "Mobile-Responsive Design",
-  "Basic SEO Setup",
-  "Contact Form Integration",
+  "Custom 3–5 page React website",
+  "AI-drafted copy, human-refined",
+  "Mobile-responsive design",
+  "GitHub Pages hosting (free forever)",
+  "2 rounds of revisions",
+  "10 business day delivery",
 ];
 
 const details = [
@@ -18,19 +20,19 @@ const details = [
 ];
 
 const ContestSection = () => {
-  const sectionRef = useScrollAnimation();
-
   return (
-    <section ref={sectionRef as React.RefObject<HTMLElement>} id="contest" className="bg-primary py-24 px-6">
-      <div className="max-w-4xl mx-auto text-center">
-        
+    <section id="contest" className="bg-primary py-24 px-6">
+      <SectionReveal className="max-w-4xl mx-auto text-center">
         <h2 className="section-headline text-primary-foreground mb-2">
-          Win a custom Starter Website.
+          Win a Starter website package.
         </h2>
-        <h2 className="section-headline text-primary-foreground mb-8">Valued at $750 CAD.</h2>
+        <h2 className="section-headline text-primary-foreground mb-8">Valued at $750.</h2>
 
         <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-4 leading-relaxed">
-          We're giving away a custom-built website to one deserving small business or community organization. Tell us about your business, and we'll choose the winner who can benefit the most and help us create an amazing case study.
+          We're giving away a complete Starter website package to one deserving small business or non-profit. This includes a custom-built, mobile-responsive React website with professional copy and hosting — everything you need to get online.
+        </p>
+        <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-10 leading-relaxed">
+          This isn't a random draw — it's an application. Tell us about your business, and we'll choose the winner who can benefit the most and help us create an amazing case study.
         </p>
 
         <div className="grid sm:grid-cols-2 gap-x-8 gap-y-3 max-w-lg mx-auto mb-10 text-left">
@@ -56,7 +58,7 @@ const ContestSection = () => {
         >
           Apply Now — It's Free →
         </a>
-      </div>
+      </SectionReveal>
     </section>
   );
 };

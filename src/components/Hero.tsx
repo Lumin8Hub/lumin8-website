@@ -1,5 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
+import SparkleBackground from "./animations/SparkleBackground";
+import MagneticButton from "./animations/MagneticButton";
 
 const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER
 
@@ -7,8 +9,7 @@ const Hero = () => {
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ delay: 0.3 });
-      tl.from(".hero-label", { y: 30, opacity: 0, duration: 0.6, ease: "power3.out" })
-        .from(".hero-headline", { y: 40, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.3")
+      tl.from(".hero-headline", { y: 40, opacity: 0, duration: 0.8, ease: "power3.out" })
         .from(".hero-subline", { y: 40, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
         .from(".hero-body", { y: 30, opacity: 0, duration: 0.6, ease: "power3.out" }, "-=0.4")
         .from(".hero-ctas", { y: 30, opacity: 0, duration: 0.6, ease: "power3.out" }, "-=0.3");
@@ -27,9 +28,10 @@ const Hero = () => {
       <div className="blob blob-pink w-36 h-36 top-[30%] left-[5%] opacity-50 blur-[50px]" />
       <div className="blob blob-yellow w-28 h-28 top-[20%] right-[35%] opacity-40 blur-[40px]" />
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 pb-20 md:pb-28 pt-32 w-full">
-        
+      {/* Sparkles */}
+      <SparkleBackground />
 
+      <div className="relative z-10 max-w-6xl mx-auto px-6 pb-20 md:pb-28 pt-32 w-full">
         <h1
           className="hero-headline font-heading font-extrabold tracking-[-0.03em] leading-[1.05] text-foreground mb-4"
           style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
@@ -48,14 +50,15 @@ const Hero = () => {
         </p>
 
         <div className="hero-ctas flex flex-col sm:flex-row gap-4 mb-4">
-          <a
+          <MagneticButton
+            as="a"
             href={CONTEST_FORM_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground font-heading font-bold px-8 py-4 rounded-full text-center hover:scale-[1.03] transition-transform duration-300"
+            className="bg-primary text-primary-foreground font-heading font-bold px-8 py-4 rounded-full text-center inline-block"
           >
             Win a Free Website →
-          </a>
+          </MagneticButton>
           <button
             onClick={() => scrollTo("#pricing")}
             className="border border-foreground/30 text-foreground font-heading font-semibold px-8 py-4 rounded-full hover:scale-[1.03] transition-transform duration-300"
@@ -65,7 +68,7 @@ const Hero = () => {
         </div>
 
         <p className="hero-ctas text-sm text-lumin8-gray-400">
-          🎉 Enter our contest for a chance to win a complete starter package valued at $750
+          🎉 Enter our contest for a chance to win a Starter website valued at $750
         </p>
       </div>
     </section>

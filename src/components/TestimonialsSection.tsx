@@ -21,7 +21,7 @@ const TestimonialsSection = () => {
       <div className="blob blob-lavender w-28 h-28 top-10 left-[10%] opacity-40 blur-[50px]" />
 
       <div className="max-w-5xl mx-auto">
-        <span className="section-label">// WHAT OUR CLIENTS SAY</span>
+        
         <h2 className="section-headline text-foreground mb-12">Don't take our word for it</h2>
 
         <div className="grid md:grid-cols-2 gap-6">

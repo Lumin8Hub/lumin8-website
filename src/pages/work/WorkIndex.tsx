@@ -14,7 +14,7 @@ const caseStudies = [
       "Personal brand website, competitor research, and vibe coding handoff for a career coach launching her own practice.",
     accentColor: "#C07D2B",
     glowColor: "rgba(192,125,43,0.15)",
-    tags: ["Personal Brand", "Solopreneur", "AI Handoff", "$100 Budget"],
+    tags: ["Personal Brand", "Solopreneur", "AI Handoff", "Full Ownership"],
   },
   {
     slug: "earth-song",

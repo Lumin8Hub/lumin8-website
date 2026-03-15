@@ -1,7 +1,6 @@
 import SectionReveal from "./animations/SectionReveal";
 import MagneticButton from "./animations/MagneticButton";
-
-const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER
+import { openContestForm } from "@/lib/tally";
 
 const CTASection = () => {
   return (
@@ -24,10 +23,8 @@ const CTASection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <MagneticButton
-            as="a"
-            href={CONTEST_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            as="button"
+            onClick={openContestForm}
             className="bg-primary text-primary-foreground font-heading font-bold px-10 py-4 rounded-full text-lg inline-block text-center"
           >
             Enter the Contest →

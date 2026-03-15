@@ -30,10 +30,10 @@ const FONT_DISPLAY = "'Playfair Display', Georgia, serif";
 
 // ─── Data ───────────────────────────────────────────────
 const stats = [
-  { value: "$100", label: "Total Project Cost" },
-  { value: "8", label: "Weeks, First Contact to Launch" },
+  { value: "1", label: "Solopreneur Launched" },
   { value: "3", label: "Clients Booked in Week 1" },
-  { value: "1", label: "Fully Independent Owner" },
+  { value: "0", label: "Ongoing Agency Dependency" },
+  { value: "100%", label: "Client-Owned & Managed" },
 ];
 
 const discoveryFeatures = [
@@ -41,13 +41,13 @@ const discoveryFeatures = [
     icon: <span className="text-lg">🧭</span>,
     title: "Personal Brand Strategy",
     description:
-      "Jillian was considering launching under 'JR Career Studio' — a separate brand name. Lumin8 advised against it: as a solo practitioner, building a personal brand under her own name (jillianrodak.com) would be more authentic, more discoverable, and wouldn't require the overhead of brand-building for a fictional entity. This simple strategic decision saved time, money, and confusion.",
+      "Jillian was weighing whether to launch under a studio brand name or her own identity. Lumin8 recommended building under jillianrodak.com — as a solo practitioner, a personal brand would be more authentic, more discoverable, and wouldn't require the overhead of building recognition for a separate entity. A simple strategic call that set the right foundation from day one.",
   },
   {
     icon: <span className="text-lg">🔍</span>,
     title: "Competitor & Design Research",
     description:
-      "Rather than asking Jillian to describe her ideal design in the abstract, Lumin8 pointed her to Dribbble for professional design inspiration and conducted competitor research across real coaching websites (maryblalock.com, shereenhoban.com, luisazhou.com, melrobbins.com). Jillian identified two sites she liked, and those became the concrete design references — making the creative brief tangible, not theoretical.",
+      "Rather than working from abstract descriptions, Lumin8 guided Jillian through real-world design inspiration — pointing her to curated examples on Dribbble and conducting competitor research across established coaching websites. Jillian identified two sites that matched her aesthetic, and those became the concrete design references. The creative direction was grounded in what she responded to, not what the agency assumed.",
   },
   {
     icon: <span className="text-lg">📧</span>,
@@ -65,40 +65,40 @@ const discoveryFeatures = [
 
 const buildTimeline = [
   {
-    phase: "Nov 4",
-    title: "First Draft in Hours",
+    phase: "Kickoff",
+    title: "First Draft, Same Day",
     description:
-      "Dan generated an initial site mockup using AI tools and deployed it to a GitHub Pages staging URL (flattorama.github.io/jillianrodak) within hours of receiving Jillian's copy. The design direction was guided by competitor examples Jillian had selected from Dribbble, not abstract wireframes.",
+      "Lumin8 generated an initial site mockup using AI development tools and deployed it to a staging URL within hours of receiving Jillian's content brief. The design was guided by the competitor examples she had selected — not abstract wireframes.",
   },
   {
-    phase: "Nov 26",
-    title: "Design Pivot",
+    phase: "Iteration",
+    title: "Honest Feedback, Fast Pivots",
     description:
-      "Jillian reviewed the second major iteration and gave honest feedback: \"Tbh I don't love the feel of this.\" Rather than push the existing direction, Lumin8 pivoted — researching real coaching websites as new references. Within two hours, a new version was live, drawing heavily from shereenhoban.com. Jillian's response: \"Definitely more in line with what I'm hoping for!\"",
+      "When the first design direction didn't feel right, Jillian said so — and Lumin8 pivoted immediately. New coaching-industry references were researched, a fresh direction was established, and an updated version was live within two hours. The process rewarded honesty, not politeness.",
   },
   {
-    phase: "Nov–Dec",
-    title: "Ruttl Feedback Loop",
+    phase: "Feedback",
+    title: "Visual Commenting on the Live Site",
     description:
-      "Lumin8 introduced Ruttl — a visual feedback tool that lets clients leave comments directly on the live site. Jillian and her partner Shane used it to provide detailed copy and design feedback across multiple rounds. Lumin8 compiled all comments into a shared Google Sheet for tracking, resolved each one, and published updated versions.",
+      "Jillian and her partner used a visual feedback tool to leave comments directly on the site itself — clicking on a headline, a photo, a section, and typing exactly what they wanted. Lumin8 compiled all feedback, resolved each comment, and published updated versions. Multiple rounds of refinement happened without a single formal meeting.",
   },
   {
-    phase: "Dec 17",
-    title: "V2 — Copy, Layout & Photo Styling",
+    phase: "Polish",
+    title: "Copy, Layout Options & Photo Styling",
     description:
-      "All of Jillian's Ruttl feedback was implemented in a single pass. Dan experimented with photo frame treatments (oval, faded, rectangular) and presented layout options for Jillian to choose between. The contact form was configured to route to her new professional email.",
+      "Lumin8 presented layout alternatives as side-by-side screenshots for quick client decisions. Photo frame treatments were tested and iterated based on Jillian's preferences. The contact form was configured to route to her new professional domain email.",
   },
   {
-    phase: "Dec 29–31",
-    title: "Google Workspace & Final Polish",
+    phase: "Config",
+    title: "Professional Email & Domain Setup",
     description:
-      "A live screen-share session configured Google Workspace, DNS records, and domain email. Shane's final copy edits arrived via Ruttl. Dan presented two layout options for the story section; Jillian picked Layout 2. The site was finalized on New Year's Eve.",
+      "A live screen-share session configured Google Workspace, DNS records, and domain email — technical infrastructure that Jillian needed but shouldn't have had to figure out alone. The result: a professional email address on her own domain, ready for client communication.",
   },
   {
-    phase: "Jan 2",
-    title: "Launch & Payment",
+    phase: "Launch",
+    title: "Live & Ready for Clients",
     description:
-      "Total project cost: $100. Jillian received step-by-step instructions to create GitHub and Replit accounts for site ownership transfer.",
+      "The site launched with all content finalized, contact forms active, and Calendly integration in place. Jillian was immediately ready to start booking consultations.",
   },
 ];
 
@@ -113,13 +113,13 @@ const empowermentFeatures = [
     icon: <span className="text-lg">🤖</span>,
     title: "Vibe Coding Training",
     description:
-      "On a Sunday afternoon, Dan walked Jillian through using Replit's AI agent to make changes to her own site. The concept is simple: describe what you want in plain English, and the AI builds it. No code knowledge required. Jillian made her first independent change that same day.",
+      "Lumin8 walked Jillian through the AI-powered editing environment in a single session. The concept: describe what you want in plain English, and the AI implements it. Want to add a testimonial section? Just tell it. Want a mobile carousel? Describe the behavior. Jillian made her first independent change the same day she received access.",
   },
   {
     icon: <span className="text-lg">🚀</span>,
     title: "Independent Launch Momentum",
     description:
-      "Within one week of taking ownership, Jillian had independently added a full testimonial section, implemented a mobile swipeable carousel (following Dan's coaching on how to prompt the AI), booked three consultation meetings, and converted her first paying client. She later used Replit to identify her site's fonts for designing matching business cards — without asking Lumin8 for help.",
+      "Within one week of taking ownership, Jillian had independently added a full testimonial section to her site, implemented a mobile-friendly swipeable carousel, booked three consultation meetings, and converted her first paying client. Weeks later, she used the AI editor to identify her site's font families for designing matching business cards — without asking Lumin8 for help.",
   },
 ];
 
@@ -201,8 +201,9 @@ const JillianRodak = () => {
                 fontWeight: 500,
               }}
             >
-              From "Totally Lost" to{" "}
-              <em style={{ color: P.primary }}>Fully Empowered</em>
+              A Career Coach's Website,
+              <br />
+              <em style={{ color: P.primary }}>Built to Hand Over</em>
             </h1>
           </SectionReveal>
           <SectionReveal delay={0.4}>
@@ -214,9 +215,9 @@ const JillianRodak = () => {
                 fontWeight: 300,
               }}
             >
-              How Lumin8 helped a career coach launch her professional website
-              for $100, then handed her the keys to manage it herself using
-              AI-powered vibe coding tools.
+              How Lumin8 guided an independent career strategist from first
+              concept to live website — then transferred full ownership so she
+              could evolve it on her own terms.
             </p>
           </SectionReveal>
 
@@ -227,7 +228,7 @@ const JillianRodak = () => {
                 "Personal Brand",
                 "Solopreneur",
                 "AI Handoff",
-                "$100 Budget",
+                "Full Ownership",
               ].map((tag) => (
                 <span
                   key={tag}
@@ -266,8 +267,8 @@ const JillianRodak = () => {
         mutedColor={P.textMuted}
         bgColor={P.bgSection}
         paragraphs={[
-          "Jillian Rodak is a career strategist and professional coach based in the Greater Toronto Area. After years working in human resources and career development, she was ready to launch her own coaching practice — helping professionals navigate pivotal career transitions, prepare for interviews, and build compelling resumes and cover letters.",
-          'Jillian knew she needed a website. But as she put it: she hadn\'t built one "since WordPress in 2010." She didn\'t have a brand identity, hadn\'t bought a domain, wasn\'t sure what platform to use, and had a modest budget. She reached out to Dan at Lumin8 with a simple question: where do I even start?',
+          "Jillian Rodak is a career strategist and professional coach based in the Greater Toronto Area. After years in human resources and career development, she was ready to launch her own coaching practice — helping professionals navigate pivotal career transitions, prepare for interviews, and build compelling resumes and cover letters.",
+          "Jillian had the expertise, the client pipeline starting to form, and the drive to build something of her own. What she needed was a partner who could translate her vision into a professional digital presence — quickly, affordably, and without locking her into an ongoing dependency on an agency to make every future update.",
         ]}
       />
 
@@ -276,15 +277,15 @@ const JillianRodak = () => {
       {/* ── The Challenge ────────────────────────────── */}
       <ProseSection
         label="THE CHALLENGE"
-        heading="More Than a Build — A Business Launch"
+        heading="Building a Practice, Not Just a Page"
         labelColor={P.primaryLight}
         labelFont={FONT_DISPLAY}
         headingFont={FONT_DISPLAY}
         mutedColor={P.textMuted}
         bgColor={P.gradientFrom}
         paragraphs={[
-          "Jillian's challenge wasn't just technical — it was existential. She wasn't looking to refresh an existing website. She was launching a business from scratch, part-time, while working a full-time job and raising young children. Every decision — from domain name to design direction to copy tone — needed to be made for the first time.",
-          "The budget was tight: roughly $100 for the entire project. The timeline was flexible but fragile — Jillian had limited evening hours to dedicate to \"business building\" tasks, and without momentum, projects like these tend to stall. Lumin8 needed to deliver a professional result at an accessible price point, but equally important was ensuring Jillian could own and evolve the site independently after handoff. A beautiful website she couldn't touch would be a dead end.",
+          "Jillian wasn't refreshing an existing website — she was launching a business. Every foundational decision still needed to be made: brand positioning, domain name, design direction, copy tone, and the right technology to build on. And as a working professional with a young family, she needed a process that respected her time — no drawn-out discovery phases, no endless revision cycles, no jargon.",
+          "Equally important was what came after launch. Jillian wanted to be self-sufficient. A beautiful website she couldn't update herself would become a liability — every small text change or new testimonial would mean going back to an agency and waiting. The right solution needed to be something she could own, understand, and evolve independently.",
         ]}
       />
 
@@ -349,9 +350,9 @@ const JillianRodak = () => {
               className="leading-relaxed max-w-3xl mb-12"
               style={{ color: P.textMuted }}
             >
-              Before a single line of code was written, Lumin8 spent weeks in a
-              strategic consulting role — helping Jillian make foundational
-              decisions that would shape her entire business presence.
+              Before a single line of code was written, Lumin8 worked closely
+              with Jillian to make the foundational strategic decisions that
+              would shape her entire professional presence.
             </p>
           </SectionReveal>
           <FeatureGrid
@@ -386,17 +387,26 @@ const JillianRodak = () => {
               className="text-2xl md:text-3xl font-bold text-white mb-4"
               style={{ fontFamily: FONT_DISPLAY, fontWeight: 500 }}
             >
-              Designed by Committee of Two, Built by AI
+              A Responsive, Low-Friction Build Process
             </h2>
+            <p
+              className="leading-relaxed max-w-3xl mb-4"
+              style={{ color: P.textMuted }}
+            >
+              The build process was designed around Jillian's schedule, not the
+              agency's. Communication happened asynchronously over messaging.
+              Lumin8 used an intuitive visual feedback tool that let Jillian
+              leave comments directly on the live site — clicking on any element
+              and typing what she wanted changed. No spreadsheets, no email
+              chains, no decoding design jargon.
+            </p>
             <p
               className="leading-relaxed max-w-3xl mb-12"
               style={{ color: P.textMuted }}
             >
-              The build process was deliberately informal and asynchronous —
-              driven by WhatsApp messages, Ruttl feedback sessions, and quick
-              layout options shared as screenshots. Lumin8 used AI coding tools
-              to generate the site, then iterated based on Jillian's visual
-              preferences and copy feedback.
+              Lumin8 used AI-powered development tools to generate and iterate
+              on the site rapidly, meaning design pivots that would normally take
+              days happened in hours.
             </p>
           </SectionReveal>
           <Timeline
@@ -412,9 +422,9 @@ const JillianRodak = () => {
 
       {/* ── Testimonial ──────────────────────────────── */}
       <TestimonialBand
-        quote="Thank you for everything. I couldn't have done this without you, truly! I'm so happy with it."
+        quote="I couldn't have done this without you, truly. I'm so happy with it — and of course I will spread the word."
         author="Jillian Rodak"
-        role="Career Strategist & Professional Coach"
+        role="Career Strategist & Coach, jillianrodak.com"
         accentColor="#fff"
         background={`linear-gradient(135deg, ${P.primary} 0%, ${P.primaryDark} 100%)`}
         quoteFont={FONT_DISPLAY}
@@ -443,11 +453,12 @@ const JillianRodak = () => {
               className="leading-relaxed max-w-3xl mb-12"
               style={{ color: P.textMuted }}
             >
-              For most agencies, launch day is the end of the story. For
-              Lumin8's Starter Tier, it's the beginning of the client's
-              independence. The entire Starter model is designed around a
-              handoff: we build it, you own it, and you learn to evolve it
-              yourself.
+              Most agencies build websites that clients can look at but can't
+              touch. Lumin8's Starter Tier is designed differently: every site is
+              built to be handed over. The client gets full ownership of the
+              codebase, a simple AI-powered editing environment, and a
+              walkthrough of how to use it. No ongoing retainer. No
+              gatekeeping.
             </p>
           </SectionReveal>
           <FeatureGrid
@@ -482,36 +493,34 @@ const JillianRodak = () => {
               className="text-2xl md:text-3xl font-bold text-white mb-8"
               style={{ fontFamily: FONT_DISPLAY, fontWeight: 500 }}
             >
-              From Side Project to Paying Practice
+              Launched, Booked, and Fully Independent
             </h2>
             <div className="space-y-5 max-w-3xl">
               <p className="leading-relaxed" style={{ color: P.textMuted }}>
                 Within days of the site going live, Jillian was receiving
-                compliments on the website from colleagues and prospects. She
-                booked three consultations in her first week — one of whom
-                became a paying client immediately. She independently added
-                features to the site, designed matching business cards, and
-                began building a professional digital presence that she fully
-                controlled.
+                unsolicited compliments on the design from colleagues and
+                prospective clients. She booked three consultations in her first
+                week, one of whom converted to a paying engagement immediately.
               </p>
               <PullQuote
                 quote="I just made my first change all by myself!"
-                attribution="Jillian Rodak, one day after ownership transfer"
+                attribution="Jillian, after her first solo edit"
                 borderColor={P.primary}
                 bgColor={`${P.primary}08`}
                 attributionColor={P.primaryLight}
                 font={FONT_DISPLAY}
               />
               <p className="leading-relaxed" style={{ color: P.textMuted }}>
-                Weeks after launch, Jillian messaged Dan: "I am getting a
-                million compliments on my website. Should we add your name or
-                logo to the bottom? I feel like we should." The Lumin8 logo now
-                sits in the footer of jillianrodak.com — placed there by the
-                client, not the agency.
+                But the real proof of the Starter Tier model wasn't the launch —
+                it was what happened after. Jillian independently added new
+                sections, refined her mobile experience, extended her brand to
+                print materials, and continued evolving the site without any
+                agency involvement. When she decided the site deserved a Lumin8
+                credit, she added the logo to the footer herself.
               </p>
               <PullQuote
-                quote="I do feel so empowered! And so happy I won't have to bug you until I've tried and failed a few times."
-                attribution="Jillian Rodak, after her first solo edit"
+                quote="I do feel so empowered!"
+                attribution="Jillian, on taking ownership of her site"
                 borderColor={P.primary}
                 bgColor={`${P.primary}08`}
                 attributionColor={P.primaryLight}
@@ -527,15 +536,15 @@ const JillianRodak = () => {
       {/* ── The Model ────────────────────────────────── */}
       <ProseSection
         label="THE MODEL"
-        heading="The Starter Tier in Action"
+        heading="What the Starter Tier Looks Like in Practice"
         labelColor={P.primaryLight}
         labelFont={FONT_DISPLAY}
         headingFont={FONT_DISPLAY}
         mutedColor={P.textMuted}
         bgColor={P.bgSection}
         paragraphs={[
-          "Jillian's project is the blueprint for Lumin8's Starter Tier. It demonstrates every principle the tier is built on: agency-quality results at an accessible price point, AI-accelerated development that compresses weeks into hours, visual feedback tools that make iteration feel effortless for non-technical clients, and a deliberate handoff process that creates independent owners — not permanent dependents.",
-          "For solopreneurs and small business owners launching their first professional website, this is what the process looks like: you bring the vision and the content, we bring the strategy, the design eye, the AI tools, and the teaching. And when we're done, it's yours.",
+          "Jillian's project is a blueprint for Lumin8's Starter Tier. It demonstrates every principle the service is built on: agency-quality design at an accessible price point, AI-accelerated development that compresses timelines without compromising quality, visual feedback tools that make the revision process intuitive for any client, and a deliberate ownership transfer that creates confident independent operators — not permanent agency dependents.",
+          "For independent professionals launching their first website, this is what the experience looks like: you bring the vision and the content, we bring the brand strategy, the design expertise, the AI tools, and the teaching. When we're done, the site is yours — and you know how to use it.",
         ]}
       />
 
@@ -550,14 +559,14 @@ const JillianRodak = () => {
               className="text-2xl md:text-3xl font-bold text-white mb-4"
               style={{ fontFamily: FONT_DISPLAY, fontWeight: 500 }}
             >
-              Ready to Launch Your Website?
+              Ready to Launch Your Practice Online?
             </h2>
             <p
               className="max-w-[500px] mx-auto mb-8 leading-relaxed"
               style={{ color: P.textMuted }}
             >
-              Professional website. Personal brand strategy. AI-powered tools
-              you can manage yourself. Starting at $750.
+              Professional website. Personal brand strategy. Full ownership and
+              the tools to manage it yourself.
             </p>
             <a
               href="/#pricing"

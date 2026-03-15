@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import MagneticButton from "./animations/MagneticButton";
-
-const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER
+import { openContestForm } from "@/lib/tally";
 
 const Hero = () => {
   useEffect(() => {
@@ -56,10 +55,8 @@ const Hero = () => {
 
         <div className="hero-ctas flex flex-col sm:flex-row gap-4 mb-4">
           <MagneticButton
-            as="a"
-            href={CONTEST_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            as="button"
+            onClick={openContestForm}
             className="bg-primary text-primary-foreground font-heading font-bold px-8 py-4 rounded-full text-center inline-block"
           >
             Win a Free Website →

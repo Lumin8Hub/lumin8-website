@@ -1,7 +1,6 @@
 import { Check } from "lucide-react";
 import SectionReveal from "./animations/SectionReveal";
-
-const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER
+import ContestFormTrigger from "@/components/ContestFormTrigger";
 
 const prizeItems = [
   "Custom 3–5 page React website",
@@ -50,14 +49,9 @@ const ContestSection = () => {
           ))}
         </div>
 
-        <a
-          href={CONTEST_FORM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-primary-foreground text-primary font-heading font-bold px-10 py-4 rounded-full hover:scale-[1.03] transition-transform duration-300 text-lg"
-        >
+        <ContestFormTrigger className="inline-block bg-primary-foreground text-primary font-heading font-bold px-10 py-4 rounded-full hover:scale-[1.03] transition-transform duration-300 text-lg">
           Apply Now — It's Free →
-        </a>
+        </ContestFormTrigger>
       </SectionReveal>
     </section>
   );

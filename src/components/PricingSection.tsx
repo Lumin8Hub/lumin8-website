@@ -4,8 +4,7 @@ import { motion, useInView, useReducedMotion } from "framer-motion";
 import { pricingPackages } from "@/data/pricing";
 import SectionReveal from "./animations/SectionReveal";
 import GlowCard from "./animations/GlowCard";
-
-const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER
+import { openContestForm } from "@/lib/tally";
 
 const PricingSection = () => {
   const cardsRef = useRef(null);
@@ -69,21 +68,19 @@ const PricingSection = () => {
                   ))}
                 </ul>
 
-                <motion.a
-                  href={CONTEST_FORM_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <motion.button
+                  onClick={openContestForm}
                   whileHover={{ scale: 1.03 }}
                   whileTap={{ scale: 0.97 }}
                   transition={{ type: "spring", stiffness: 400, damping: 25 }}
-                  className={`block text-center font-heading font-semibold py-3 rounded-full ${
+                  className={`block w-full text-center font-heading font-semibold py-3 rounded-full ${
                     pkg.highlighted
                       ? "bg-primary text-primary-foreground"
                       : "border border-foreground/30 text-foreground"
                   }`}
                 >
                   {pkg.cta}
-                </motion.a>
+                </motion.button>
               </GlowCard>
             </motion.div>
           ))}

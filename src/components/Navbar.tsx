@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import lumin8Logo from "@/assets/lumin8-logo.png";
-
-const CONTEST_FORM_URL = "#contest"; // PLACEHOLDER — replace with actual form URL before launch
+import ContestFormTrigger from "@/components/ContestFormTrigger";
 
 const navLinks: { label: string; href: string; isRoute?: boolean }[] = [
   { label: "Services", href: "#solution" },
@@ -84,14 +83,9 @@ const Navbar = () => {
         ))}
       </div>
 
-      <a
-        href={CONTEST_FORM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hidden md:inline-flex bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-2 rounded-full hover:scale-[1.03] transition-transform duration-300"
-      >
+      <ContestFormTrigger className="hidden md:inline-flex bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-2 rounded-full hover:scale-[1.03] transition-transform duration-300">
         Enter the Contest
-      </a>
+      </ContestFormTrigger>
 
       {/* Mobile hamburger */}
       <button
@@ -114,14 +108,9 @@ const Navbar = () => {
               {link.label}
             </button>
           ))}
-          <a
-            href={CONTEST_FORM_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-3 rounded-full text-center hover:scale-[1.03] transition-transform duration-300"
-          >
+          <ContestFormTrigger className="bg-primary text-primary-foreground font-heading font-semibold text-sm px-5 py-3 rounded-full text-center hover:scale-[1.03] transition-transform duration-300">
             Enter the Contest
-          </a>
+          </ContestFormTrigger>
         </div>
       )}
     </nav>

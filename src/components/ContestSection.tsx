@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import { Link } from "react-router-dom";
 import SectionReveal from "./animations/SectionReveal";
 import ContestFormTrigger from "@/components/ContestFormTrigger";
 
@@ -52,6 +53,17 @@ const ContestSection = () => {
         <ContestFormTrigger className="inline-block bg-primary-foreground text-primary font-heading font-bold px-10 py-4 rounded-full hover:scale-[1.03] transition-transform duration-300 text-lg">
           Apply Now — It's Free →
         </ContestFormTrigger>
+
+        <p className="mt-4 text-sm text-primary-foreground/60">
+          By entering, you agree to the{" "}
+          <Link
+            to="/contest-rules"
+            className="underline hover:text-primary-foreground/90 transition-colors"
+          >
+            Official Contest Rules
+          </Link>
+          .
+        </p>
       </SectionReveal>
     </section>
   );

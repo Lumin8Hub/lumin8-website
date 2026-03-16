@@ -11,6 +11,7 @@ import UnapologeticallyJewish from "./pages/work/UnapologeticallyJewish.tsx";
 import Sportball from "./pages/work/Sportball.tsx";
 import JillianRodak from "./pages/work/JillianRodak.tsx";
 import OnboardingPage from "./pages/OnboardingPage.tsx";
+import ContestRules from "./pages/ContestRules.tsx";
 import ContestFormModal from "./components/ContestFormModal.tsx";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/work/sportball" element={<Sportball />} />
           <Route path="/work/jillian-rodak" element={<JillianRodak />} />
           <Route path="/onboarding" element={<OnboardingPage />} />
+          <Route path="/contest-rules" element={<ContestRules />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

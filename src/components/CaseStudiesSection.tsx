@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useInView, useReducedMotion } from "framer-mot
 import { ArrowRight, ChevronDown } from "lucide-react";
 import SectionReveal from "./animations/SectionReveal";
 import GlowCard from "./animations/GlowCard";
+import SectionCTA from "./SectionCTA";
 
 const studies = [
   {
@@ -105,6 +106,8 @@ const CaseStudiesSection = () => {
             );
           })}
         </div>
+
+        <SectionCTA text="Let's Build Your Website" />
       </div>
     </section>
   );

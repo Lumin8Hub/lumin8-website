@@ -105,6 +105,7 @@ const SocialProofBar = () => {
       return;
     }
 
+    advance();
     intervalRef.current = setInterval(advance, 2000);
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);

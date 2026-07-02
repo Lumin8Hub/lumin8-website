@@ -6,15 +6,16 @@ import FeatureGrid from "@/components/casestudy/FeatureGrid";
 import Timeline from "@/components/casestudy/Timeline";
 import TestimonialBand from "@/components/casestudy/TestimonialBand";
 import SectionReveal from "@/components/animations/SectionReveal";
+import Seo from "@/components/Seo";
 
 const ACCENT = "#B08D57";
 const ACCENT_GREEN = "#2D5A3D";
 
 const stats = [
+  { value: "11", label: "Days: first contact to live ticket sales" },
   { value: "3x", label: "Increase in inquiries" },
   { value: "10", label: "Days to launch" },
-  { value: "100%", label: "Mobile responsive" },
-  { value: "4.9★", label: "Client satisfaction" },
+  { value: "2", label: "Revision rounds" },
 ];
 
 const features = [
@@ -75,6 +76,11 @@ const timeline = [
 
 const EarthSong = () => (
   <CaseStudyLayout accentColor={ACCENT}>
+    <Seo
+      title="Earth Song Festival — 11 Days From First Contact to Ticket Sales"
+      description="A nature-inspired digital home for a ceremonial festival retreat — from first contact to live ticket sales in 11 days."
+      path="/work/earth-song"
+    />
     {/* Hero */}
     <section className="px-6 pb-16">
       <div className="max-w-5xl mx-auto">
@@ -91,7 +97,10 @@ const EarthSong = () => (
           >
             Earth Song Festival
           </h1>
-          <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed font-body">
+          <p className="text-lg md:text-xl text-white/70 max-w-2xl leading-relaxed font-body mb-3">
+            From first contact to live ticket sales in <strong style={{ color: ACCENT }}>11 days</strong>.
+          </p>
+          <p className="text-base text-white/60 max-w-2xl leading-relaxed font-body">
             A nature-inspired digital home for a ceremonial festival retreat
             — designed to feel as grounding as the gathering it represents.
           </p>
@@ -253,14 +262,14 @@ const EarthSong = () => (
             Ready to build your digital presence?
           </h2>
           <p className="text-white/60 mb-8 max-w-lg mx-auto">
-            Let's create something beautiful together. Starting at $750 CAD.
+            Let's create something beautiful together — and fast.
           </p>
           <a
-            href="/#pricing"
+            href="/contact"
             className="inline-flex items-center gap-2 font-heading font-semibold text-sm px-8 py-3 rounded-full transition-transform hover:scale-[1.03]"
             style={{ backgroundColor: ACCENT, color: "#1a1a1a" }}
           >
-            View Packages →
+            Start a Conversation →
           </a>
         </SectionReveal>
       </div>

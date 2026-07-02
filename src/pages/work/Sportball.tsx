@@ -7,6 +7,7 @@ import Timeline from "@/components/casestudy/Timeline";
 import TestimonialBand from "@/components/casestudy/TestimonialBand";
 import ProseSection from "@/components/casestudy/ProseSection";
 import SectionReveal from "@/components/animations/SectionReveal";
+import Seo from "@/components/Seo";
 
 // ─── Palette ────────────────────────────────────────────
 const P = {
@@ -202,6 +203,11 @@ const Sportball = () => {
 
   return (
     <CaseStudyLayout accentColor={P.primary} bgColor={P.gradientFrom}>
+      <Seo
+        title="Sportball — Franchise Rebrand & Performance Marketing"
+        description="Full-funnel rebrand, multi-location CMS, and performance marketing for a 20+ location children's sports franchise. 60%+ CAC reduction."
+        path="/work/sportball"
+      />
       {/* ── Hero ─────────────────────────────────────── */}
       <section
         className="relative px-6 pb-24"
@@ -476,7 +482,7 @@ const Sportball = () => {
               for franchise growth.
             </p>
             <a
-              href="/#pricing"
+              href="/contact?need=franchise"
               className="inline-flex items-center gap-2 font-semibold text-sm px-11 py-4 text-white transition-all duration-300 hover:-translate-y-px"
               style={{
                 backgroundColor: P.primary,

@@ -8,6 +8,7 @@ import TestimonialBand from "@/components/casestudy/TestimonialBand";
 import ProseSection from "@/components/casestudy/ProseSection";
 import PullQuote from "@/components/casestudy/PullQuote";
 import SectionReveal from "@/components/animations/SectionReveal";
+import Seo from "@/components/Seo";
 
 const ACCENT = "#79CAC1";
 const ACCENT_DARK = "#0D0D0D";
@@ -15,8 +16,7 @@ const ACCENT_DARK = "#0D0D0D";
 const stats = [
   { value: "10", label: "Days to launch" },
   { value: "5x", label: "Engagement increase" },
-  { value: "100%", label: "Mobile responsive" },
-  { value: "24/7", label: "Always online" },
+  { value: "4", label: "Integrations: Shopify, Donorbox, Tally, Eventbrite" },
 ];
 
 const features = [
@@ -87,6 +87,11 @@ const timeline = [
 
 const UnapologeticallyJewish = () => (
   <CaseStudyLayout accentColor={ACCENT}>
+    <Seo
+      title="Unapologetically Jewish — Brutalist Activist Platform"
+      description="A bold, high-impact digital home built in 10 days for a vibrant, unapologetic community brand."
+      path="/work/unapologetically-jewish"
+    />
     {/* Hero */}
     <section className="px-6 pb-16">
       <div className="max-w-5xl mx-auto">
@@ -264,14 +269,14 @@ const UnapologeticallyJewish = () => (
             Ready to Stand Unapologetically?
           </h2>
           <p className="text-white/60 mb-8 max-w-lg mx-auto">
-            Matt Taub trusted us with his fight — who's next? Starting at $750 CAD.
+            Matt Taub trusted us with his fight — who's next?
           </p>
           <a
-            href="/#pricing"
+            href="/contact"
             className="inline-flex items-center gap-2 font-heading font-semibold text-sm px-8 py-3 rounded-full transition-transform hover:scale-[1.03]"
             style={{ backgroundColor: ACCENT, color: ACCENT_DARK }}
           >
-            View Packages →
+            Start a Conversation →
           </a>
         </SectionReveal>
       </div>

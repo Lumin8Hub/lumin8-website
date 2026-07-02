@@ -8,6 +8,7 @@ import TestimonialBand from "@/components/casestudy/TestimonialBand";
 import ProseSection from "@/components/casestudy/ProseSection";
 import PullQuote from "@/components/casestudy/PullQuote";
 import SectionReveal from "@/components/animations/SectionReveal";
+import Seo from "@/components/Seo";
 
 // ─── Palette ────────────────────────────────────────────
 const P = {
@@ -111,7 +112,7 @@ const empowermentFeatures = [
   },
   {
     icon: <span className="text-lg">🤖</span>,
-    title: "Vibe Coding Training",
+    title: "AI Editor Walkthrough",
     description:
       "Lumin8 walked Jillian through the AI-powered editing environment in a single session. The concept: describe what you want in plain English, and the AI implements it. Want to add a testimonial section? Just tell it. Want a mobile carousel? Describe the behavior. Jillian made her first independent change the same day she received access.",
   },
@@ -137,7 +138,6 @@ const GradientDivider = () => (
 
 // ─── Component ──────────────────────────────────────────
 const JillianRodak = () => {
-  // Conditional Playfair Display loading
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "stylesheet";
@@ -151,6 +151,11 @@ const JillianRodak = () => {
 
   return (
     <CaseStudyLayout accentColor={P.primary} bgColor={P.gradientFrom}>
+      <Seo
+        title="Jillian Rodak — A Career Coach's Website, Built to Hand Over"
+        description="How Lumin8 guided an independent career strategist from first concept to live website, then transferred full ownership so she could evolve it on her own terms."
+        path="/work/jillian-rodak"
+      />
       {/* ── Hero ─────────────────────────────────────── */}
       <section
         className="relative px-6 pb-24"
@@ -454,11 +459,10 @@ const JillianRodak = () => {
               style={{ color: P.textMuted }}
             >
               Most agencies build websites that clients can look at but can't
-              touch. Lumin8's Starter Tier is designed differently: every site is
-              built to be handed over. The client gets full ownership of the
-              codebase, a simple AI-powered editing environment, and a
-              walkthrough of how to use it. No ongoing retainer. No
-              gatekeeping.
+              touch. We build differently: every site is built to be handed
+              over. The client gets full ownership of the codebase, a simple
+              AI-powered editing environment, and a walkthrough of how to use
+              it. No ongoing retainer. No gatekeeping.
             </p>
           </SectionReveal>
           <FeatureGrid
@@ -511,7 +515,7 @@ const JillianRodak = () => {
                 font={FONT_DISPLAY}
               />
               <p className="leading-relaxed" style={{ color: P.textMuted }}>
-                But the real proof of the Starter Tier model wasn't the launch —
+                But the real proof of the ownership-transfer model wasn't the launch —
                 it was what happened after. Jillian independently added new
                 sections, refined her mobile experience, extended her brand to
                 print materials, and continued evolving the site without any
@@ -536,14 +540,14 @@ const JillianRodak = () => {
       {/* ── The Model ────────────────────────────────── */}
       <ProseSection
         label="THE MODEL"
-        heading="What the Starter Tier Looks Like in Practice"
+        heading="What Ownership Transfer Looks Like in Practice"
         labelColor={P.primaryLight}
         labelFont={FONT_DISPLAY}
         headingFont={FONT_DISPLAY}
         mutedColor={P.textMuted}
         bgColor={P.bgSection}
         paragraphs={[
-          "Jillian's project is a blueprint for Lumin8's Starter Tier. It demonstrates every principle the service is built on: agency-quality design at an accessible price point, AI-accelerated development that compresses timelines without compromising quality, visual feedback tools that make the revision process intuitive for any client, and a deliberate ownership transfer that creates confident independent operators — not permanent agency dependents.",
+          "Jillian's project is a blueprint for how we build for independent professionals. It demonstrates every principle the work is built on: agency-quality design at an accessible price point, AI-accelerated development that compresses timelines without compromising quality, visual feedback tools that make the revision process intuitive for any client, and a deliberate ownership transfer that creates confident independent operators — not permanent agency dependents.",
           "For independent professionals launching their first website, this is what the experience looks like: you bring the vision and the content, we bring the brand strategy, the design expertise, the AI tools, and the teaching. When we're done, the site is yours — and you know how to use it.",
         ]}
       />
@@ -569,7 +573,7 @@ const JillianRodak = () => {
               the tools to manage it yourself.
             </p>
             <a
-              href="/#pricing"
+              href="/contact"
               className="inline-flex items-center gap-2 font-semibold text-sm px-11 py-4 text-white transition-all duration-300 hover:-translate-y-px"
               style={{
                 backgroundColor: P.primary,

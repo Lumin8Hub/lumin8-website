@@ -1,5 +1,8 @@
 import SectionReveal from "./animations/SectionReveal";
 
+// REVIEW: "Most of our new work comes through referral" is a reasonable inference
+// from the brief's community-first go-to-market description, not a verified stat —
+// confirm this framing is accurate before publishing.
 const stats = [
   { value: "50+", label: "Websites built" },
   { value: "$500K+", label: "Ad spend managed" },

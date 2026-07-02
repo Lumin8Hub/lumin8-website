@@ -1,3 +1,6 @@
+// REVIEW: this explanation deliberately avoids naming specific third-party AI
+// vendors/tools (kept generic as "AI build agents" per the "Lumin8 Build System"
+// branding) — confirm this is the right level of specificity for a public page.
 export const buildSystemExplanation = [
   "Senior strategists direct AI build agents through detailed instruction documents — the same way a creative director briefs a production team, except the production team works in minutes, not weeks.",
   "Research, strategy, and creative direction are always human. Production — the drafting, the coding, the first-pass design — is where AI accelerates the work.",

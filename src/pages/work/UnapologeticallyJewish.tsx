@@ -265,6 +265,9 @@ const UnapologeticallyJewish = () => (
     <section className="px-6 pb-24">
       <div className="max-w-5xl mx-auto text-center">
         <SectionReveal>
+          <p className="text-sm font-mono uppercase tracking-wider mb-4" style={{ color: ACCENT }}>
+            UJ owns the platform outright — no lock-in.
+          </p>
           <h2 className="text-3xl md:text-4xl font-heading font-bold mb-4 text-white">
             Ready to Stand Unapologetically?
           </h2>

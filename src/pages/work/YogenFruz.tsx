@@ -211,6 +211,9 @@ const YogenFruz = () => (
     <section className="px-6 pb-24">
       <div className="max-w-5xl mx-auto text-center">
         <SectionReveal>
+          <p className="text-sm font-mono uppercase tracking-wider mb-4" style={{ color: ACCENT }}>
+            Every asset Yogen Früz owns is theirs outright — the ongoing relationship is a choice, not a lock-in.
+          </p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ fontFamily: '"DM Serif Display", serif', color: "#fff" }}>
             Ready for creative that performs?
           </h2>

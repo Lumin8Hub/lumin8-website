@@ -13,6 +13,10 @@ export const franchiseeServices = [
   "Launch playbooks built from what already works",
 ];
 
+// REVIEW: pillar titles below are short labels distilling the "standardized-yet-
+// personalized," "central governance/local empowerment," and "crowdsourced content"
+// language already used on the Sportball case study — confirm these names are the
+// ones the agency wants to use publicly as its named methodology.
 export const agencyModelPillars = [
   {
     title: "Standardized, Yet Personalized",

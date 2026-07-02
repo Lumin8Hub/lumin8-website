@@ -43,6 +43,9 @@ export interface ServiceData {
   ctaText: string;
 }
 
+// REVIEW: which case studies are featured on each service page (and the specific
+// blurb angle chosen for each) is an editorial judgment call — confirm these are
+// the strongest proof points per service before launch.
 export const services: ServiceData[] = [
   {
     slug: "websites",

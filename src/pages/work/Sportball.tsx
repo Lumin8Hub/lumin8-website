@@ -306,7 +306,7 @@ const Sportball = () => {
         mutedColor={P.textMuted}
         bgColor={P.bgSection}
         paragraphs={[
-          "Sportball is one of North America's leading children's sports education organizations, operating across 20+ franchise locations with programs that have impacted over 134,000 kids across 9,600+ classes in more than 3,000 venues. Their non-competitive, multi-sport approach — covering everything from soccer and basketball to tennis and t-ball — is designed to build confidence, coordination, and a lifelong love of physical activity in children from 16 months to 12 years.",
+          "Sportball is one of North America's leading children's sports education organizations, operating across 20+ franchise locations with programs that have enrolled 134K+ kids. Their non-competitive, multi-sport approach — covering everything from soccer and basketball to tennis and t-ball — is designed to build confidence, coordination, and a lifelong love of physical activity in children from 16 months to 12 years.",
           "Following a corporate acquisition, the Sportball leadership team needed more than a logo refresh. They needed a complete brand transformation: a modernized visual identity, a unified digital platform capable of serving a growing franchise network, a content strategy that spoke to both prospective parents and potential franchisees, and a performance marketing system that could prove ROI at the local level. They came to Lumin8 to make it happen.",
         ]}
       />
@@ -467,6 +467,9 @@ const Sportball = () => {
       <section className="px-6 py-24" style={{ backgroundColor: P.gradientFrom }}>
         <div className="max-w-5xl mx-auto text-center">
           <SectionReveal>
+            <p className="text-sm font-mono uppercase tracking-wider mb-4" style={{ color: P.primary }}>
+              Sportball owns every asset we built — no lock-in, no dependency on us.
+            </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white mb-4"
               style={{ fontFamily: FONT_DISPLAY }}

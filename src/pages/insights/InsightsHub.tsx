@@ -10,6 +10,8 @@ import { insights, type InsightCategory } from "@/data/insights";
 
 const categories: InsightCategory[] = ["AI & Marketing", "Franchise Growth", "Web & Brand", "Toronto Business"];
 
+// REVIEW: featured article is auto-selected as the most recent by date — confirm
+// this is the desired behavior vs. manually pinning a specific pillar article.
 const sorted = [...insights].sort((a, b) => (a.date < b.date ? 1 : -1));
 
 const InsightsHub = () => {

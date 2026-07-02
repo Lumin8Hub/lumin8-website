@@ -1,3 +1,5 @@
+// REVIEW: exact wording of these 5 conviction statements is drafted from the
+// brand voice principles in the rebrand brief — confirm phrasing with principals.
 export const convictions = [
   {
     title: "Clients are capable professionals",

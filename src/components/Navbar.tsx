@@ -12,6 +12,9 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
+// REVIEW: desktop nav switches to the mobile drawer at the `lg` (1024px)
+// breakpoint to fit all 7 items + CTA in the floating pill comfortably —
+// confirm this doesn't clip awkwardly on common tablet/laptop widths.
 const servicesLinks = [
   { label: "Websites & Digital Platforms", href: "/services/websites" },
   { label: "Performance Marketing", href: "/services/performance-marketing" },

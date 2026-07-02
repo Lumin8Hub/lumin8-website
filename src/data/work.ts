@@ -1,3 +1,6 @@
+// REVIEW: service/vertical tag assignments below (used for the /work filters)
+// are a judgment call based on each project's primary deliverable — confirm
+// categorization, especially for multi-service projects like Yogen Früz.
 export interface FeaturedCase {
   slug: string;
   company: string;
@@ -77,6 +80,10 @@ export const featuredCases: FeaturedCase[] = [
   },
 ];
 
+// REVIEW: descriptions below for Modelly, ACS Landscape Construction, Gifts From
+// Yoga, Mirallor, and Still Life Retreat/Roaring Twenties are inferred from the
+// one-line mentions in the rebrand brief, not confirmed project detail — verify
+// wording before this ships.
 export const galleryProjects: GalleryProject[] = [
   {
     name: "Precedent AI",

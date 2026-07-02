@@ -18,6 +18,8 @@ export interface InsightArticle {
 
 // REVIEW: publish dates are placeholders — confirm the actual launch cadence before going live.
 // REVIEW: all 6 articles below need principal sign-off before publishing.
+// REVIEW: the Dan/Dorit byline split (3 articles each) is an editorial judgment
+// call based on each principal's stated focus areas, not a confirmed assignment.
 export const insights: InsightArticle[] = [
   {
     slug: "how-ai-accelerated-agency-works",

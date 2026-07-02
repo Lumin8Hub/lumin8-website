@@ -35,8 +35,8 @@ const Hero = () => {
           style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
         >
           There's light at the
-          <br />
-          end of the funnel.
+          <br className="hidden sm:block" />
+          {" "}end of the funnel.
         </h1>
 
         <p className="hero-subline max-w-2xl text-lumin8-gray-400 text-lg leading-relaxed mb-10">

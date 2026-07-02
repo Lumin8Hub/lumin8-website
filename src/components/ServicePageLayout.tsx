@@ -13,6 +13,9 @@ import { processSteps } from "@/data/process";
 import { serviceSchema } from "@/lib/schema";
 import type { ServiceData } from "@/data/services";
 
+// REVIEW: the ownership/no-lock-in pillar block below renders identically on
+// every service page by design (per the pre-launch checklist requirement) —
+// confirm the generic wording fits all 5 services rather than a per-service line.
 const ServicePageLayout = ({ service }: { service: ServiceData }) => {
   useEffect(() => {
     window.scrollTo(0, 0);

@@ -1,3 +1,6 @@
+// REVIEW: the representative-services list per tier is a judgment call distilling
+// the architecture doc's service assignments into short bullets — confirm the
+// framing (especially Launch including AI/automation builds) before launch.
 export interface Tier {
   name: "Launch" | "Grow" | "Partner";
   framing: string;

@@ -1,3 +1,5 @@
+// REVIEW: exact copy for these 3 cards is drafted to match the "AI-accelerated,
+// human-refined" narrative from the brief — confirm phrasing before launch.
 export const differenceCards = [
   {
     title: "Senior strategy",

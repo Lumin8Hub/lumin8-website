@@ -6,10 +6,7 @@ import Hero from "@/components/Hero";
 import SocialProofBar from "@/components/SocialProofBar";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
-import PricingSection from "@/components/PricingSection";
-import AddOnsSection from "@/components/AddOnsSection";
 import ProcessSection from "@/components/ProcessSection";
-import ContestSection from "@/components/ContestSection";
 import FAQSection from "@/components/FAQSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import AboutSection from "@/components/AboutSection";
@@ -35,10 +32,7 @@ const Index = () => {
       <ProblemSection />
       <AboutSection />
       <CaseStudiesSection />
-      <PricingSection />
       <ProcessSection />
-      <ContestSection />
-      <AddOnsSection />
       <SolutionSection />
       <TestimonialsSection />
       <CTASection />

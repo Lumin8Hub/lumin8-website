@@ -7,6 +7,7 @@ import Timeline from "@/components/casestudy/Timeline";
 import TestimonialBand from "@/components/casestudy/TestimonialBand";
 import ProseSection from "@/components/casestudy/ProseSection";
 import SectionReveal from "@/components/animations/SectionReveal";
+import Seo from "@/components/Seo";
 
 // ─── Palette ────────────────────────────────────────────
 const P = {
@@ -202,6 +203,11 @@ const Sportball = () => {
 
   return (
     <CaseStudyLayout accentColor={P.primary} bgColor={P.gradientFrom}>
+      <Seo
+        title="Sportball — Franchise Rebrand & Performance Marketing"
+        description="Full-funnel rebrand, multi-location CMS, and performance marketing for a 20+ location children's sports franchise. 60%+ CAC reduction."
+        path="/work/sportball"
+      />
       {/* ── Hero ─────────────────────────────────────── */}
       <section
         className="relative px-6 pb-24"
@@ -300,7 +306,7 @@ const Sportball = () => {
         mutedColor={P.textMuted}
         bgColor={P.bgSection}
         paragraphs={[
-          "Sportball is one of North America's leading children's sports education organizations, operating across 20+ franchise locations with programs that have impacted over 134,000 kids across 9,600+ classes in more than 3,000 venues. Their non-competitive, multi-sport approach — covering everything from soccer and basketball to tennis and t-ball — is designed to build confidence, coordination, and a lifelong love of physical activity in children from 16 months to 12 years.",
+          "Sportball is one of North America's leading children's sports education organizations, operating across 20+ franchise locations with programs that have enrolled 134K+ kids. Their non-competitive, multi-sport approach — covering everything from soccer and basketball to tennis and t-ball — is designed to build confidence, coordination, and a lifelong love of physical activity in children from 16 months to 12 years.",
           "Following a corporate acquisition, the Sportball leadership team needed more than a logo refresh. They needed a complete brand transformation: a modernized visual identity, a unified digital platform capable of serving a growing franchise network, a content strategy that spoke to both prospective parents and potential franchisees, and a performance marketing system that could prove ROI at the local level. They came to Lumin8 to make it happen.",
         ]}
       />
@@ -461,6 +467,9 @@ const Sportball = () => {
       <section className="px-6 py-24" style={{ backgroundColor: P.gradientFrom }}>
         <div className="max-w-5xl mx-auto text-center">
           <SectionReveal>
+            <p className="text-sm font-mono uppercase tracking-wider mb-4" style={{ color: P.primary }}>
+              Sportball owns every asset we built — no lock-in, no dependency on us.
+            </p>
             <h2
               className="text-2xl md:text-3xl font-bold text-white mb-4"
               style={{ fontFamily: FONT_DISPLAY }}
@@ -476,7 +485,7 @@ const Sportball = () => {
               for franchise growth.
             </p>
             <a
-              href="/#pricing"
+              href="/contact?need=franchise"
               className="inline-flex items-center gap-2 font-semibold text-sm px-11 py-4 text-white transition-all duration-300 hover:-translate-y-px"
               style={{
                 backgroundColor: P.primary,

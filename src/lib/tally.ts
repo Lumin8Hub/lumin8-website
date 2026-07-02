@@ -1,47 +1,43 @@
-// Form integration utilities for Lumin8 Starter
+// Form integration utilities for the Lumin8 Contact page.
 
-// ─── Tally Form IDs (onboarding only) ──────────────────────
+// REVIEW: confirm the real Tally form ID before launch (currently a placeholder).
 export const TALLY_FORMS = {
-  CLIENT_ONBOARDING: "44jQjd",
+  CONTACT: "REPLACE_WITH_REAL_FORM_ID",
 } as const;
 
-// ─── HubSpot contest form ───────────────────────────────────
-// Opens via a custom DOM event; ContestFormModal listens for it.
-const HUBSPOT_FALLBACK_URL =
-  "https://5o9ln8.share-na3.hsforms.com/2WBLcaWnkRSOHASztAbIe4A";
-
-export function openContestForm(): void {
-  window.dispatchEvent(new CustomEvent("open-contest-form"));
-
-  // If the modal isn't mounted (shouldn't happen), fall back to opening the
-  // HubSpot share link in a new tab after a brief delay.
-  setTimeout(() => {
-    const modal = document.querySelector(".contest-form-modal");
-    if (!modal) {
-      window.open(HUBSPOT_FALLBACK_URL, "_blank");
-    }
-  }, 100);
+export interface ContactFormFields {
+  name: string;
+  company: string;
+  email: string;
+  phone?: string;
+  need: string;
+  budget: string;
+  message: string;
 }
 
-// ─── Tally onboarding popup ─────────────────────────────────
-export function openOnboardingForm(): void {
+/**
+ * Opens the Tally contact form as a popup, passing the fields collected in
+ * our own on-page form as Tally hidden fields so submissions land fully
+ * populated. Requires the Tally form to define matching hidden field keys —
+ * REVIEW once the real form is configured.
+ */
+export function openContactForm(fields: ContactFormFields): void {
   if (window.Tally) {
-    window.Tally.openPopup(TALLY_FORMS.CLIENT_ONBOARDING, {
-      width: 700,
-      layout: "default",
-      onOpen: () => console.log("[Lumin8] Onboarding form opened"),
-      onSubmit: (payload: unknown) =>
-        console.log("[Lumin8] Onboarding form submitted", payload),
+    window.Tally.openPopup(TALLY_FORMS.CONTACT, {
+      layout: "modal",
+      hiddenFields: fields,
     });
-  } else {
-    window.open(
-      `https://tally.so/r/${TALLY_FORMS.CLIENT_ONBOARDING}`,
-      "_blank",
-    );
+    return;
   }
+  // Graceful fallback if the Tally widget script hasn't loaded.
+  const body = encodeURIComponent(
+    `Name: ${fields.name}\nCompany: ${fields.company}\nPhone: ${fields.phone ?? ""}\nWhat they need: ${fields.need}\nBudget: ${fields.budget}\n\n${fields.message}`,
+  );
+  window.location.href = `mailto:hello@lumin8.agency?subject=${encodeURIComponent(
+    `New inquiry from ${fields.name}`,
+  )}&body=${body}`;
 }
 
-// ─── Type declarations ──────────────────────────────────────
 declare global {
   interface Window {
     Tally?: {

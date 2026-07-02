@@ -2,20 +2,19 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "@/components/Navbar";
+import Seo from "@/components/Seo";
 import Hero from "@/components/Hero";
 import SocialProofBar from "@/components/SocialProofBar";
-import ProblemSection from "@/components/ProblemSection";
-import SolutionSection from "@/components/SolutionSection";
-import PricingSection from "@/components/PricingSection";
-import AddOnsSection from "@/components/AddOnsSection";
-import ProcessSection from "@/components/ProcessSection";
-import ContestSection from "@/components/ContestSection";
-import FAQSection from "@/components/FAQSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import AboutSection from "@/components/AboutSection";
+import DifferenceSection from "@/components/DifferenceSection";
+import ServicesOverviewSection from "@/components/ServicesOverviewSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
+import FranchiseStrip from "@/components/FranchiseStrip";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import CommunityTrustSection from "@/components/CommunityTrustSection";
+import InsightsTeaser from "@/components/InsightsTeaser";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import { organizationSchema, localBusinessSchema } from "@/lib/schema";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,20 +28,23 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <Seo
+        title="Lumin8 — Toronto Digital Marketing & Web Design Agency"
+        description="Lumin8 is a Toronto digital agency that builds websites, brands, and marketing engines — with senior strategy and AI-accelerated delivery that moves at the speed your business actually needs."
+        path="/"
+        jsonLd={[organizationSchema, localBusinessSchema]}
+      />
       <Navbar />
       <Hero />
       <SocialProofBar />
-      <ProblemSection />
-      <AboutSection />
+      <DifferenceSection />
+      <ServicesOverviewSection />
       <CaseStudiesSection />
-      <PricingSection />
-      <ProcessSection />
-      <ContestSection />
-      <AddOnsSection />
-      <SolutionSection />
+      <FranchiseStrip />
       <TestimonialsSection />
+      <CommunityTrustSection />
+      <InsightsTeaser />
       <CTASection />
-      <FAQSection />
       <Footer />
     </div>
   );

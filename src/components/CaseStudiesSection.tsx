@@ -4,7 +4,6 @@ import { motion, AnimatePresence, useInView, useReducedMotion } from "framer-mot
 import { ArrowRight, ChevronDown } from "lucide-react";
 import SectionReveal from "./animations/SectionReveal";
 import GlowCard from "./animations/GlowCard";
-import SectionCTA from "./SectionCTA";
 
 const studies = [
   {
@@ -18,7 +17,7 @@ const studies = [
     summary: "Full-funnel rebrand, multi-location CMS, and performance marketing for a 20+ location franchise network.",
     challenge: "Following an acquisition, Sportball needed a full rebrand and marketing transformation to unify their 20+ franchise locations.",
     solution: "We led the rebrand, built a multi-location CMS, and deployed a performance marketing engine that cut CAC by over 60%.",
-    result: "60%+ CAC reduction, <$10 cost-per-registration, and a scalable system serving 134K+ kids across 20+ locations.",
+    result: "60%+ CAC reduction across 20+ franchise locations.",
   },
   {
     id: 3,
@@ -31,7 +30,7 @@ const studies = [
     summary: "A bold, high-impact digital home for a vibrant community brand.",
     challenge: "UJ had built an incredible community through social media but lacked a dedicated digital home that matched their bold brand energy.",
     solution: "We built a high-contrast, brutalist-inspired website with Oswald typography and a stark red, black, and white palette.",
-    result: "5x community engagement, a powerful digital presence, and a platform that's as unapologetic as the movement it represents.",
+    result: "5x increase in community engagement, deployed in 10 days.",
   },
   {
     id: 1,
@@ -44,7 +43,7 @@ const studies = [
     summary: "A nature-inspired digital presence for a ceremonial festival retreat.",
     challenge: "Earth Song Festival had a growing community but no cohesive digital home — just fragmented social profiles and a basic landing page.",
     solution: "We designed a custom React website with a forest green, gold, and cream palette, Cormorant Garamond typography, and an immersive video hero.",
-    result: "A significant increase in inquiries, a professional digital presence, and a platform that truly reflects the brand's warmth and authenticity.",
+    result: "11 days from first contact to live ticket sales — and a 3x increase in inquiries.",
   },
 ];
 
@@ -61,9 +60,9 @@ const CaseStudiesSection = () => {
 
       <div className="max-w-6xl mx-auto">
         <SectionReveal>
-          <h2 className="section-headline text-foreground mb-4">A full-service agency</h2>
+          <h2 className="section-headline text-foreground mb-4">Real results, real businesses</h2>
           <p className="section-subheadline mb-16">
-            See how we've helped businesses like yours build their digital presence.
+            Three projects, three different problems, three clear wins.
           </p>
         </SectionReveal>
 
@@ -106,7 +105,15 @@ const CaseStudiesSection = () => {
           })}
         </div>
 
-        <SectionCTA text="Let's Build Your Website" />
+        <div className="flex justify-center mt-8">
+          <Link
+            to="/work"
+            className="inline-flex items-center gap-2 bg-primary text-primary-foreground font-heading font-semibold px-8 py-3 rounded-full hover:scale-[1.03] transition-transform duration-300"
+          >
+            All Work
+            <ArrowRight className="w-4 h-4" />
+          </Link>
+        </div>
       </div>
     </section>
   );

@@ -1,10 +1,6 @@
-import PagePlaceholder from "@/components/PagePlaceholder";
+import ServicePageLayout from "@/components/ServicePageLayout";
+import { getServiceBySlug } from "@/data/services";
 
-const Websites = () => (
-  <PagePlaceholder
-    title="Websites & Digital Platforms"
-    note="This page is being finalized for the 2026 relaunch."
-  />
-);
+const Websites = () => <ServicePageLayout service={getServiceBySlug("websites")!} />;
 
 export default Websites;

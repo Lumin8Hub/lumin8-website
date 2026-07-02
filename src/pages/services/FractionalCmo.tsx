@@ -1,7 +1,6 @@
-import PagePlaceholder from "@/components/PagePlaceholder";
+import ServicePageLayout from "@/components/ServicePageLayout";
+import { getServiceBySlug } from "@/data/services";
 
-const FractionalCmo = () => (
-  <PagePlaceholder title="Fractional CMO & Strategy" note="This page is being finalized for the 2026 relaunch." />
-);
+const FractionalCmo = () => <ServicePageLayout service={getServiceBySlug("fractional-cmo")!} />;
 
 export default FractionalCmo;

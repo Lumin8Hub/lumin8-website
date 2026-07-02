@@ -1,7 +1,6 @@
-import PagePlaceholder from "@/components/PagePlaceholder";
+import ServicePageLayout from "@/components/ServicePageLayout";
+import { getServiceBySlug } from "@/data/services";
 
-const PerformanceMarketing = () => (
-  <PagePlaceholder title="Performance Marketing" note="This page is being finalized for the 2026 relaunch." />
-);
+const PerformanceMarketing = () => <ServicePageLayout service={getServiceBySlug("performance-marketing")!} />;
 
 export default PerformanceMarketing;

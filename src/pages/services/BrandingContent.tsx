@@ -1,7 +1,6 @@
-import PagePlaceholder from "@/components/PagePlaceholder";
+import ServicePageLayout from "@/components/ServicePageLayout";
+import { getServiceBySlug } from "@/data/services";
 
-const BrandingContent = () => (
-  <PagePlaceholder title="Branding & Creative Content" note="This page is being finalized for the 2026 relaunch." />
-);
+const BrandingContent = () => <ServicePageLayout service={getServiceBySlug("branding-content")!} />;
 
 export default BrandingContent;

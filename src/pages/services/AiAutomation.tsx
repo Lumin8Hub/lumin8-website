@@ -1,7 +1,6 @@
-import PagePlaceholder from "@/components/PagePlaceholder";
+import ServicePageLayout from "@/components/ServicePageLayout";
+import { getServiceBySlug } from "@/data/services";
 
-const AiAutomation = () => (
-  <PagePlaceholder title="AI, Automation & Custom Apps" note="This page is being finalized for the 2026 relaunch." />
-);
+const AiAutomation = () => <ServicePageLayout service={getServiceBySlug("ai-automation")!} />;
 
 export default AiAutomation;

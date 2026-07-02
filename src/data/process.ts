@@ -1,37 +1,33 @@
+/**
+ * The Lumin8 Build System's 4-stage process. Shared by the /services hub
+ * teaser and the fuller walkthrough on /how-we-work (Phase 6) — deliberately
+ * framed by process stages, not fixed day counts, since only case studies
+ * with a known start date (e.g. Earth Song's 11 days) can state a real
+ * timeline.
+ */
 export const processSteps = [
   {
-    step: "01",
-    title: "Book & Brief",
-    timeline: "Day 1",
-    description: "Fill out our structured intake form so we understand your business, your audience, and your goals. Pay your 50% deposit and you're in the queue. No lengthy discovery calls unless we need to clarify something.",
-    color: "lumin8-yellow",
+    phase: "01 · Brief",
+    title: "Structured intake, no meeting marathons",
+    description:
+      "A detailed intake process gets us everything we need to understand your business, your audience, and your goals — without a string of discovery calls.",
   },
   {
-    step: "02",
-    title: "Content & Copy",
-    timeline: "Day 2–3",
-    description: "We use your intake form to generate all website copy using AI, then refine it with human expertise. You review everything in Google Docs and give us your feedback. No feedback within 3 business days? We ship what we wrote.",
-    color: "lumin8-green",
+    phase: "02 · Build",
+    title: "Strategy, copy, design, code",
+    description:
+      "Senior strategists direct the Lumin8 Build System through the work. You give feedback with visual annotations directly on the live build — not email chains.",
   },
   {
-    step: "03",
-    title: "Build & Design",
-    timeline: "Day 4–6",
-    description: "Your site comes to life as a custom React build — mobile-responsive, fast, and strategically structured. We deploy it to a staging URL for your review. No Wix. No WordPress. No compromises.",
-    color: "lumin8-pink",
+    phase: "03 · Refine",
+    title: "Defined revision rounds",
+    description:
+      "Side-by-side options where it matters, clear rounds of revision where it doesn't. No open-ended scope creep in either direction.",
   },
   {
-    step: "04",
-    title: "Review & Revise",
-    timeline: "Day 7–8",
-    description: "You get two consolidated rounds of revisions. Text changes, image swaps, color tweaks — we've got you. New pages, new features, or a completely different direction? That's a separate conversation (and quote).",
-    color: "lumin8-coral",
-  },
-  {
-    step: "05",
-    title: "Launch",
-    timeline: "Day 9–10",
-    description: "You approve. You pay the balance. We flip the switch. Your site goes live on your domain with a complete handoff document — live URL, analytics access, and everything you need to own your digital presence.",
-    color: "lumin8-lavender",
+    phase: "04 · Launch & Handoff",
+    title: "Live, documented, and yours",
+    description:
+      "Your project goes live with analytics access and full documentation — plus a walkthrough of everything you now own outright.",
   },
 ];

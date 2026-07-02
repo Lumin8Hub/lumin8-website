@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
+// REVIEW: architecture doc's proof-bar roster also names Aqua-Tots, Precedent AI,
+// and ChaiTech/OJSN — no logo assets exist for them yet in public/logos. Add once supplied.
 const clients = [
   {
     name: "YogenFruz",
@@ -142,7 +144,7 @@ const SocialProofBar = () => {
     >
       <div className="max-w-6xl mx-auto px-4">
         <p className="font-serif italic text-lg md:text-2xl text-center text-[#ed4c96]">
-          Trusted by Canadian Businesses
+          Trusted by franchises, festivals, firms, and founders across the GTA and North America.
         </p>
 
         <div

@@ -1,6 +1,5 @@
 import SectionReveal from "./animations/SectionReveal";
 import MagneticButton from "./animations/MagneticButton";
-import { openContestForm } from "@/lib/tally";
 
 const CTASection = () => {
   return (
@@ -18,22 +17,22 @@ const CTASection = () => {
 
       <SectionReveal className="max-w-3xl mx-auto text-center relative z-10">
         <h2 className="font-serif text-foreground mb-10" style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)" }}>
-          Let's Get to Work!
+          Let's get to work.
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <MagneticButton
-            as="button"
-            onClick={openContestForm}
+            as="link"
+            to="/contact"
             className="bg-primary text-primary-foreground font-heading font-bold px-10 py-4 rounded-full text-lg inline-block text-center"
           >
-            Enter the Contest →
+            Start a Conversation
           </MagneticButton>
           <a
             href="mailto:hello@lumin8.agency"
             className="border border-foreground/30 text-foreground font-heading font-semibold px-10 py-4 rounded-full hover:scale-[1.03] transition-transform duration-300 text-lg"
           >
-            Contact Us
+            hello@lumin8.agency
           </a>
         </div>
       </SectionReveal>

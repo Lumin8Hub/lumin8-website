@@ -1,10 +1,13 @@
 import { useRef, useState, type ReactNode } from "react";
 import { motion, useReducedMotion } from "framer-motion";
+import { Link } from "react-router-dom";
+
+const MotionLink = motion(Link);
 
 interface MagneticButtonProps {
   children: ReactNode;
   className?: string;
-  as?: "button" | "a";
+  as?: "button" | "a" | "link";
   [key: string]: unknown;
 }
 
@@ -25,7 +28,7 @@ const MagneticButton = ({ children, className, as = "button", ...props }: Magnet
     });
   };
 
-  const Component = as === "a" ? motion.a : motion.button;
+  const Component = as === "link" ? MotionLink : as === "a" ? motion.a : motion.button;
 
   return (
     <Component

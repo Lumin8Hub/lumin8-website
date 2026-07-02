@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import CaseStudyLayout from "@/components/casestudy/CaseStudyLayout";
 import BrowserMockup from "@/components/casestudy/BrowserMockup";
 import StatsBar from "@/components/casestudy/StatsBar";
@@ -572,8 +573,8 @@ const JillianRodak = () => {
               Professional website. Personal brand strategy. Full ownership and
               the tools to manage it yourself.
             </p>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               className="inline-flex items-center gap-2 font-semibold text-sm px-11 py-4 text-white transition-all duration-300 hover:-translate-y-px"
               style={{
                 backgroundColor: P.primary,
@@ -590,7 +591,7 @@ const JillianRodak = () => {
               }}
             >
               Start Your Project →
-            </a>
+            </Link>
           </SectionReveal>
         </div>
       </section>

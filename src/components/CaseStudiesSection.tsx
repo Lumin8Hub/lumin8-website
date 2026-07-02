@@ -4,6 +4,7 @@ import { motion, AnimatePresence, useInView, useReducedMotion } from "framer-mot
 import { ArrowRight, ChevronDown } from "lucide-react";
 import SectionReveal from "./animations/SectionReveal";
 import GlowCard from "./animations/GlowCard";
+import { publicAsset } from "@/lib/utils";
 
 const studies = [
   {
@@ -132,7 +133,7 @@ const CardContent = ({
     <div className="p-6">
       <div className="flex flex-col items-center gap-4 mb-3">
         <img
-          src={study.logoUrl}
+          src={publicAsset(study.logoUrl)}
           alt={`${study.company} logo`}
           className="h-16 w-auto object-contain"
         />

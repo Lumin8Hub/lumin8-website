@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Globe, Megaphone, Shield, Smartphone, Users, Wrench } from "lucide-react";
 import CaseStudyLayout from "@/components/casestudy/CaseStudyLayout";
 import BrowserMockup from "@/components/casestudy/BrowserMockup";
@@ -274,13 +275,13 @@ const UnapologeticallyJewish = () => (
           <p className="text-white/60 mb-8 max-w-lg mx-auto">
             Matt Taub trusted us with his fight — who's next?
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-2 font-heading font-semibold text-sm px-8 py-3 rounded-full transition-transform hover:scale-[1.03]"
             style={{ backgroundColor: ACCENT, color: ACCENT_DARK }}
           >
             Start a Conversation →
-          </a>
+          </Link>
         </SectionReveal>
       </div>
     </section>

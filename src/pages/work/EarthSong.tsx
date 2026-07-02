@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Globe, Leaf, Music, Palette, Smartphone, Zap } from "lucide-react";
 import CaseStudyLayout from "@/components/casestudy/CaseStudyLayout";
 import BrowserMockup from "@/components/casestudy/BrowserMockup";
@@ -267,13 +268,13 @@ const EarthSong = () => (
           <p className="text-white/60 mb-8 max-w-lg mx-auto">
             Let's create something beautiful together — and fast.
           </p>
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-2 font-heading font-semibold text-sm px-8 py-3 rounded-full transition-transform hover:scale-[1.03]"
             style={{ backgroundColor: ACCENT, color: "#1a1a1a" }}
           >
             Start a Conversation →
-          </a>
+          </Link>
         </SectionReveal>
       </div>
     </section>

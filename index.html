@@ -3,32 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- GitHub Pages SPA: restore path from 404 redirect query string -->
+    <!-- GitHub Pages SPA: restore path from 404 redirect query string.
+         %BASE_URL% is replaced by Vite at build time ("/" on the custom
+         domain, "/lumin8-website/" on the github.io project page). -->
     <script>
       (function() {
         var params = new URLSearchParams(window.location.search);
         var p = params.get('p');
         if (p) {
+          var base = '%BASE_URL%'.replace(/\/$/, '');
           var h = params.get('h') || '';
           var search = p.includes('?') ? p.split('?').slice(1).join('?') : '';
           var path = p.split('?')[0];
           window.history.replaceState(
             null, null,
-            path + (search ? '?' + search : '') + h
+            base + path + (search ? '?' + search : '') + h
           );
         }
       })();
     </script>
     <meta property="og:title" content="Lumin8 — Toronto Digital Marketing & Web Design Agency" />
     <meta property="og:description" content="Websites, brands, and marketing engines built with senior strategy and AI-accelerated delivery. AI-accelerated. Human-refined. No AI slop. Ever." />
-    <meta property="og:image" content="/Lumin8SocialShare.jpeg" />
+    <meta property="og:image" content="https://lumin8.agency/Lumin8SocialShare.jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="/Lumin8SocialShare.jpeg" />
+    <meta name="twitter:image" content="https://lumin8.agency/Lumin8SocialShare.jpeg" />
     <meta name="twitter:title" content="Lumin8 — Toronto Digital Marketing & Web Design Agency" />
     <meta name="twitter:description" content="Websites, brands, and marketing engines built with senior strategy and AI-accelerated delivery. AI-accelerated. Human-refined. No AI slop. Ever." />
     <meta name="description" content="Lumin8 is a Toronto digital agency that builds websites, brands, and marketing engines — with senior strategy and AI-accelerated delivery that moves at the speed your business actually needs." />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="%BASE_URL%favicon.png" />
+    <link rel="apple-touch-icon" href="%BASE_URL%favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <!-- Tally Form Embed Script (contact page) -->
     <script src="https://tally.so/widgets/embed.js"></script>

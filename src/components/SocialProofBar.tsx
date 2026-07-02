@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from "react";
+import { publicAsset } from "@/lib/utils";
 
 // REVIEW: architecture doc's proof-bar roster also names Aqua-Tots, Precedent AI,
 // and ChaiTech/OJSN — no logo assets exist for them yet in public/logos. Add once supplied.
@@ -164,7 +165,7 @@ const SocialProofBar = () => {
             {extendedClients.map((client, idx) => {
               const img = (
                 <img
-                  src={client.logoUrl}
+                  src={publicAsset(client.logoUrl)}
                   alt={client.name}
                   className="h-[72px] md:h-[84px] w-auto object-contain"
                   style={{ minHeight: "72px" }}

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import CaseStudyLayout from "@/components/casestudy/CaseStudyLayout";
 import BrowserMockup from "@/components/casestudy/BrowserMockup";
 import StatsBar from "@/components/casestudy/StatsBar";
@@ -484,8 +485,8 @@ const Sportball = () => {
               performance marketing system that proves ROI — we build systems designed
               for franchise growth.
             </p>
-            <a
-              href="/contact?need=franchise"
+            <Link
+              to="/contact?need=franchise"
               className="inline-flex items-center gap-2 font-semibold text-sm px-11 py-4 text-white transition-all duration-300 hover:-translate-y-px"
               style={{
                 backgroundColor: P.primary,
@@ -500,7 +501,7 @@ const Sportball = () => {
               }}
             >
               Start a Conversation →
-            </a>
+            </Link>
           </SectionReveal>
         </div>
       </section>

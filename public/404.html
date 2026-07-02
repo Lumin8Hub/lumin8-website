@@ -5,13 +5,19 @@
     <title>Lumin8</title>
     <script>
       // GitHub Pages SPA redirect
-      // Encodes the full path as a query string and redirects to the root
-      // so that index.html can restore it before React Router boots.
+      // Encodes the requested path as a query string and redirects to the site
+      // base so index.html can restore it before React Router boots.
+      // On *.github.io project pages the site lives under /<repo>/, so the
+      // first path segment is part of the base and must be preserved; on the
+      // custom domain the base is the root.
       var l = window.location;
+      var segmentsToKeep = l.hostname.endsWith('.github.io') ? 1 : 0;
+      var parts = l.pathname.split('/');
+      var base = parts.slice(0, segmentsToKeep + 1).join('/');
+      var route = l.pathname.slice(base.length) || '/';
       l.replace(
         l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1).join('/') +
-        '/?p=' + encodeURIComponent(l.pathname + l.search) +
+        base + '/?p=' + encodeURIComponent(route + l.search) +
         (l.hash ? '&h=' + encodeURIComponent(l.hash) : '')
       );
     </script>

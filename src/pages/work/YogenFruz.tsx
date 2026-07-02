@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BarChart3, Layers, Sparkles, Target } from "lucide-react";
 import CaseStudyLayout from "@/components/casestudy/CaseStudyLayout";
 import BrowserMockup from "@/components/casestudy/BrowserMockup";
@@ -220,13 +221,13 @@ const YogenFruz = () => (
           <p className="text-white/60 mb-8 max-w-lg mx-auto">
             Let's talk about your network's next campaign.
           </p>
-          <a
-            href="/contact?need=franchise"
+          <Link
+            to="/contact?need=franchise"
             className="inline-flex items-center gap-2 font-heading font-semibold text-sm px-8 py-3 rounded-full transition-transform hover:scale-[1.03]"
             style={{ backgroundColor: ACCENT, color: "#fff" }}
           >
             Start a Conversation →
-          </a>
+          </Link>
         </SectionReveal>
       </div>
     </section>
